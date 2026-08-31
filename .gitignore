@@ -3,5 +3,8 @@ package.json
 package-lock.json
 capture.js
 capture_local.js
+debug_zoom.js
 screenshots/local_*.png
 screenshots/test_*.png
+screenshots/dbg_*.png
+screenshots/debug_*.png
