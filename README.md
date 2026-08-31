@@ -4,7 +4,7 @@
 
 ## 🔗 Live Demo
 
-**[👉 데모 보기](https://seoldi.github.io/coffee-maker-kiosk/)**
+**[👉 주문 화면 데모](https://seoldi.github.io/coffee-maker-kiosk/demo.html)** &nbsp;|&nbsp; **[⚙️ 관리자 모드 데모](https://seoldi.github.io/coffee-maker-kiosk/demo.html?src=admin_intro)**
 
 | 주문 흐름 | 관리자 모드 |
 |-----------|------------|
