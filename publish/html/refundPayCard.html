@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<!--<div data-include-path="header.html"></div>-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#00ADEF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Coffee Maker Kiosk</title>
+
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../fonts/Pretendard/fonts.css" rel="stylesheet">
+    <link href="../fonts/Montserrat/fonts.css" rel="stylesheet">
+    <link href="../../js/plugin/jquery.modal.min.css" rel="stylesheet">
+    <link href="../css/style.css?aft" rel="stylesheet">
+
+    <script src="../../js/jquery-3.7.0.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="../../js/plugin/jquery.modal.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+
+    <body id="pay" class="wrap refund">
+        <h2>
+            <span class="point">신용카드</span>를<br>투입구에 꽂아주세요
+            <p class="explain">IC상태 요류가 뜨면,<br>신용카드를 마그네틱 라인에 좌우로 긁어주세요</p>
+        </h2>
+
+        <img src="../source/pay.svg">
+
+        <section id="totalPrice" class="cardPrice">
+            <div class="item price">
+                <p class="tl">포인트반환</p>
+                <p class="num">-1,000(<span>잔여</span> 8,000P)</p>
+            </div>
+            <div class="item total">
+                <p class="tl">주문금액</p>
+                <p class="num red">7,000</p>
+            </div>
+        </section>
+
+        <!-- Modal : 주문완료 -->
+        <div id="modalComplete" class="modal">
+            <div class="inner">
+                <h2>환불영수증을<br>출력할까요?</h2>
+                <div class="btn_wrap">
+                    <a href="#" class="btn btn-primary">영수증 생략</a>
+                    <a href="#" class="btn btn-red">영수증 출력</a>
+                </div>
+        
+            </div>
+        </div>
+    </body>
+    
+    <script src="../common/js/script.js"></script>
+    <script src="../common/js/jquery-3.7.0.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="../common/plugin/jquery-modal/jquery.modal.min.js"></script>
+
+    <script>
+        setTimeout(function () {
+            $('#modalComplete').modal();
+        }, 2000);
+    </script>
+    
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="theme-color" content="#00ADEF">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <title>Coffee Maker Kiosk</title>
+    
+        <link href="../common/css/reset.css" rel="stylesheet">
+        <link href="../common/fonts/Pretendard/fonts.css" rel="stylesheet">
+        <link href="../common/fonts/Montserrat/fonts.css" rel="stylesheet">
+        <link rel="stylesheet" href="../common/plugin/jquery-modal/jquery.modal.min.css" />
+        <link href="style.css?aft" rel="stylesheet">
+    </head>
+
+    <body class="wrap">
+        <main class="alignCenter">
+            <a href="#member" rel="modal:open"></a>
+            <img src="img/main_coffee.png">
+            <img src="img/logo.svg" class="logo">
+            <div class="touch alignCenter">
+                <img src="img/ico_touch.svg">
+                <p>화면을 터치하시면,<br>메뉴를 선택 할 수 있습니다.</p>
+            </div>
+            <div class="explain">
+                <div class="item">
+                    <img src="img/explain_1.svg">
+                    <p>메뉴선택</p>
+                </div>
+                <img src="img/explain_arrow.svg" class="arrow">
+                <div class="item">
+                    <img src="img/explain_2.svg">
+                    <p>결제</p>
+                </div>
+                <img src="img/explain_arrow.svg" class="arrow">
+                <div class="item">
+                    <img src="img/explain_3.svg">
+                    <p>주문번호</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal : 회원/비회원 -->
+        <div id="member" class="modal">
+            <div class="inner">
+                <h2>ORDER</h2>
+                <div class="type">
+                    <a href="#memberOrder" rel="modal:open" class="item" style="background-color: #68462B;">
+                        <img src="img/type_1.svg">
+                        <p>회원 주문</p>
+                    </a>
+                    <a href="menu_coffee.html" class="item" style="background-color: #212325;">
+                        <img src="img/type_2.svg">
+                        <p>비회원 주문</p>
+                    </a>
+                </div>
+                <div class="benefit">
+                    <h3>회원특혜</h3>
+                    <div>
+                        <p>포인트 : 결재 금액의 1% 적립</p>
+                        <a href="#memberJoin" rel="modal:open">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal : 회원주문 -->
+        <div id="memberOrder" class="modal">
+            <div class="inner">
+                <h2>회원주문</h2>
+                <div class="content">
+                    <p>휴대전화 번호를 입력해 주세요.</p>
+                    <input class="input-numeric" type="nember" readonly="">
+                    <div class="keypad">
+                        <button type="button" class="key" data-key="1">1</button>
+                        <button type="button" class="key" data-key="2">2</button>
+                        <button type="button" class="key" data-key="3">3</button>
+                        <button type="button" class="key" data-key="4">4</button>
+                        <button type="button" class="key" data-key="5">5</button>
+                        <button type="button" class="key" data-key="6">6</button>
+                        <button type="button" class="key" data-key="7">7</button>
+                        <button type="button" class="key" data-key="8">8</button>
+                        <button type="button" class="key" data-key="9">9</button>
+                        <button type="button" class="key-clear">C</button>
+                        <button type="button" class="key" data-key="0">0</button>
+                        <button type="button" class="key-del"><img src="img/key-del.svg"></button>
+                    </div>
+                    <div class="btn_wrap">
+                        <a href="#memberJoin" rel="modal:open" class="btn btn-primary">회원가입</a>
+                        <a href="#" rel="modal:close" class="btn btn-secondary">취소</a>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <h3>회원특혜</h3>
+                    <div>
+                        <p>포인트 : 결재 금액의 1% 적립</p>
+                        <a href="#memberJoin" rel="modal:open">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal : 회원가입 -->
+        <div id="memberJoin" class="modal">
+            <div class="inner">
+                <h2>회원가입</h2>
+                <div class="content">
+                    <div class="item">
+                        <p>전화번호</p>
+                        <input class="input" type="nember" readonly="">
+                    </div>
+                    <div class="item">
+                        <p>비밀번호</p>
+                        <input class="input" type="password" readonly="">
+                    </div>
+                    <div class="item">
+                        <p>비밀번호 확인</p>
+                        <input class="input" type="password" readonly="">
+                    </div>
+                    <div class="btn_wrap">
+                        <a href="#" class="btn btn-primary">회원가입</a>
+                        <a href="#" rel="modal:close" class="btn btn-secondary">가입취소</a>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <h3>회원특혜</h3>
+                    <div>
+                        <p>포인트 : 결재 금액의 1% 적립</p>
+                        <a href="join.html">회원가입</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script src="../common/js/script.js"></script>
+    <script src="../common/js/jquery-3.7.0.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="../common/plugin/jquery-modal/jquery.modal.min.js"></script>
+    
+</html>

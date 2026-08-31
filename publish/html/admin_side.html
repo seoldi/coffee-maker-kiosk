@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#00ADEF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Coffee Maker Kiosk</title>
+
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../fonts/Pretendard/fonts_admin.css" rel="stylesheet">
+    <link href="../fonts/Montserrat/fonts_admin.css" rel="stylesheet">
+    <link href="../../js/plugin/jquery.modal.min.css" rel="stylesheet">
+    <link href="../css/admin.css" rel="stylesheet">
+
+    <script src="../../js/jquery-3.7.0.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="../../js/plugin/jquery.modal.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+
+<body>
+    <div class="sub">
+        <header>
+            <a href="admin_intro.html" class="home"><img src="../source/top_home.svg"></a>
+            <h2>SIDE MENU</h2>
+            <div class="right">
+                <a href="admin_profil.html"><img src="../source/top_user.svg"></a>
+                <a href="admin_intro.html"><img src="../source/top_logout.svg"></a>
+            </div>
+        </header>
+        <main class="menu">
+            <section class="menuList">
+                <p class="result">12 Coffees Result</p>
+                <div class="item">
+                    <div class="img"><img src="../source/side_2.png"></div>
+                    <ol class="info">
+                        <li class="name">딸기 샌드위치</li>
+                        <li class="price">4,500원<p>(point : 45P)</p></li>
+                    </ol>
+                    <a href="#remove" rel="modal:open" class="close"><img src="../source/admin_close.svg"></a>
+                    <a href="#editMenu" rel="modal:open" class="edit"><img src="../source/admin_edit.svg"></a>
+                </div>
+                <div class="item">
+                    <div class="img"><img src="../source/side_2.png"></div>
+                    <ol class="info">
+                        <li class="name">케이크 조각</li>
+                        <li class="price">4,500원<p>(point : 45P)</p></li>
+                    </ol>
+                    <a href="#remove" rel="modal:open" class="close"><img src="../source/admin_close.svg"></a>
+                    <a href="#editMenu" rel="modal:open" class="edit"><img src="../source/admin_edit.svg"></a>
+                </div>
+                <div class="item">
+                    <div class="img"><img src="../source/side_1.png"></div>
+                    <ol class="info">
+                        <li class="name">마카롱</li>
+                        <li class="price">4,500원<p>(point : 45P)</p></li>
+                    </ol>
+                    <a href="#remove" rel="modal:open" class="close"><img src="../source/admin_close.svg"></a>
+                    <a href="#editMenu" rel="modal:open" class="edit"><img src="../source/admin_edit.svg"></a>
+                </div>
+            </section>
+        </main>
+        <nav>
+            <a href="admin_coffee.html" class="item">
+                <img src="../source/nav_coffee.svg">
+                <p>커피메뉴</p>
+            </a>
+            <a href="admin_side.html" class="item active">
+                <img src="../source/nav_side.svg">
+                <p>사이드메뉴</p>
+            </a>
+            <a href="#addMenu" rel="modal:open" class="item">
+                <img src="../source/nav_plus.svg">
+            </a>
+            <a href="admin_etc.html" class="item">
+                <img src="../source/nav_etc.svg">
+                <p>기타메뉴</p>
+            </a>
+            <a href="admin_setting.html" class="item">
+                <img src="../source/nav_setting.svg">
+                <p>기계설정</p>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Modal : 새메뉴 추가 팝업 -->
+    <div id="addMenu" class="modal">
+        <div class="inner">
+            <h2>NEW MENU</h2>
+
+            <section>
+                <div class="upload">
+                    <div class="info">
+                        <img src="../source/upload.svg">
+                        <a href="#" class="bt">Image Upload</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>제품명</h3>
+                    <input class="input" type="text">
+                </div>
+                <div class="item">
+                    <h3>가격</h3>
+                    <input class="input" type="text">
+                    <p>원</p>
+                </div>
+                <div class="item">
+                    <h3>포인트</h3>
+                    <input class="input" type="text">
+                    <p>P</p>
+                </div>
+                <div class="item">
+                    <h3>재고</h3>
+                    <input class="input" type="text" placeholder="45">
+                    <p>EA</p>
+                </div>
+                <div class="hidden">
+                    <input type="checkbox" id="chk" class="styled-checkbox">
+                    <label for="chk">메뉴 화면에서 숨기기</label>
+                </div>
+            </section>
+
+            <a href="" class="bt addBt">추가하기</a>
+        </div>
+    </div>
+
+    <!-- Modal : 메뉴 수정 팝업 -->
+    <div id="editMenu" class="modal">
+        <div class="inner">
+            <h2>MENU EDIT</h2>
+    
+            <section>
+                <div class="upload">
+                    <div class="info">
+                        <img src="../source/upload.svg">
+                        <a href="#" class="bt">Image Upload</a>
+                    </div>
+                    <img class="img" src="../source/coffee_1.png">
+                </div>
+                <div class="item">
+                    <h3>제품명</h3>
+                    <input class="input" type="text">
+                </div>
+                <div class="item">
+                    <h3>가격</h3>
+                    <input class="input" type="text">
+                    <p>원</p>
+                </div>
+                <div class="item">
+                    <h3>포인트</h3>
+                    <input class="input" type="text">
+                    <p>P</p>
+                </div>
+                <div class="item">
+                    <h3>재고</h3>
+                    <input class="input" type="text" placeholder="45">
+                    <p>EA</p>
+                </div>
+                <div class="hidden">
+                    <input type="checkbox" id="chk" class="styled-checkbox">
+                    <label for="chk">메뉴 화면에서 숨기기</label>
+                </div>
+            </section>
+
+            <div class="btns">
+                <a href="" class="bt">삭제</a>
+                <a href="" class="bt">수정</a>
+                <a href="" class="bt">추가</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Modal : 메뉴제거 팝업 -->
+    <div id="remove" class="modal">
+        <div class="inner remove">
+            <h3>
+                해당메뉴를<br>제거하시겠습니까?
+            </h3>
+    
+            <div class="btns">
+                <a href="" class="bt">삭제하기</a>
+                <a href="" class="bt">취소하기</a>
+            </div>
+    
+        </div>
+    </div>
+</body>
+
+</html>

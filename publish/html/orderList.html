@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<!--<div data-include-path="header.html"></div>-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#00ADEF">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Coffee Maker Kiosk</title>
+
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../fonts/Pretendard/fonts.css" rel="stylesheet">
+    <link href="../fonts/Montserrat/fonts.css" rel="stylesheet">
+    <link href="../../js/plugin/jquery.modal.min.css" rel="stylesheet">
+    <link href="../css/style.css?aft" rel="stylesheet">
+
+    <script src="../../js/jquery-3.7.0.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="../../js/plugin/jquery.modal.min.js"></script>
+    <script src="../../js/script.js"></script>
+</head>
+
+    <body id="pay" class="wrap">
+        <h2><span class="point">주문리스트</span>를 확인해주세요.</h2>
+        <section class="list">
+            <div class="item">
+                <img src="../source/coffee_1.png" class="img">
+                <h3>아이스아메리카노</h3>
+                <p class="price">3,000</p>
+                <div class="count">
+                    <img src="../source/price_minus.svg">
+                    <span>1</span>
+                    <img src="../source/price_plus.svg">
+                </div>
+                <img src="../source/price_remove.svg" class="remove">
+            </div>
+            <div class="item">
+                <img src="../source/coffee_2.png" class="img">
+                <h3>아메리카노</h3>
+                <p class="price">3,000</p>
+                <div class="count">
+                    <img src="../source/price_minus.svg">
+                    <span>1</span>
+                    <img src="../source/price_plus.svg">
+                </div>
+                <img src="../source/price_remove.svg" class="remove">
+            </div>
+            <div class="item">
+                <img src="../source/side_1.png" class="img">
+                <h3>마카롱</h3>
+                <p class="price">1,000</p>
+                <div class="count">
+                    <img src="../source/price_minus.svg">
+                    <span>1</span>
+                    <img src="../source/price_plus.svg">
+                </div>
+                <img src="../source/price_remove.svg" class="remove">
+            </div>
+        </section>
+
+        <section id="totalPrice">
+            <div class="item total">
+                <p class="tl">주문금액</p>
+                <p class="num">7,000</p>
+            </div>
+            <div class="item point">
+                <p class="tl">포인트사용</p>
+                <p class="num">-1,000(잔여 8,000P)</p>
+            </div>
+            <div class="buttons">
+                <a href="menu_coffee.html" class="cancel">취소</a>
+                <a href="cardPay.html" class="payBtn">
+                    6,000<p>결제하기</p>
+                </a>
+            </div>
+        </section>
+    </body>
+    
+    <script src="../common/js/script.js"></script>
+    <script src="../common/js/jquery-3.7.0.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="../common/plugin/jquery-modal/jquery.modal.min.js"></script>
+    
+</html>
