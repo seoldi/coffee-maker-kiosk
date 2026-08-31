@@ -21,8 +21,6 @@
 
 ---
 
-## 🇰🇷 한국어
-
 실제 클라이언트 프로젝트로 제작한 무인 커피 키오스크 UI 프로토타입입니다.  
 1080×1920px 세로형 고객 키오스크와 모바일 최적화 관리자 패널을 포함합니다.
 
@@ -50,8 +48,6 @@
 UI/UX 디자인 및 프론트엔드 퍼블리싱 전담 (1인). 화면 흐름 기획, 컴포넌트 설계, 전 화면 동작하는 정적 프로토타입 구현까지 단독 진행.
 
 ---
-
-## 🇺🇸 English
 
 An interactive kiosk UI prototype built for a real client — covers the full customer order flow and a complete admin panel.  
 1080×1920px portrait canvas for customers; mobile-optimized layout for admin.
