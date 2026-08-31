@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coffee Maker Kiosk — Demo</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #EDE8DF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .kiosk-wrap {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 32px 100px rgba(0,0,0,.35), 0 0 0 1px rgba(0,0,0,.08);
+  }
+
+  .kiosk-wrap iframe {
+    display: block;
+    width: 1080px;
+    height: 1920px;
+    border: none;
+    transform-origin: top left;
+  }
+
+  .back-btn {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    background: rgba(255,255,255,.85);
+    backdrop-filter: blur(8px);
+    border: none;
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: .84rem;
+    font-family: "Pretendard","Malgun Gothic",sans-serif;
+    color: #3d2b23;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.12);
+    transition: background .15s;
+  }
+  .back-btn:hover { background: #fff; }
+</style>
+</head>
+<body>
+
+<a class="back-btn" href="index.html">← 목록으로</a>
+
+<div class="kiosk-wrap" id="kioskWrap">
+  <iframe src="publish/html/index.html" id="kioskFrame"></iframe>
+</div>
+
+<script>
+(function () {
+  var W = 1080, H = 1920;
+  var wrap  = document.getElementById('kioskWrap');
+  var frame = document.getElementById('kioskFrame');
+
+  // ?src=admin_intro 같은 파라미터로 시작 페이지 지정 가능
+  var params = new URLSearchParams(location.search);
+  if (params.get('src')) {
+    frame.src = 'publish/html/' + params.get('src') + '.html';
+  }
+
+  function fit() {
+    var pad = 24;
+    var scale = Math.min(
+      (window.innerWidth  - pad) / W,
+      (window.innerHeight - pad) / H
+    );
+    frame.style.transform = 'scale(' + scale + ')';
+    wrap.style.width  = Math.round(W * scale) + 'px';
+    wrap.style.height = Math.round(H * scale) + 'px';
+  }
+
+  fit();
+  window.addEventListener('resize', fit);
+})();
+</script>
+
+</body>
+</html>
