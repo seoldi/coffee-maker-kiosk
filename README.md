@@ -7,17 +7,19 @@
 
 ## 📸 Screenshots
 
+![](screenshots/main.png)
+
 ### 고객용 키오스크 · Customer Kiosk
 
-| 주문 시작 · Order Start | 메뉴 선택 · Menu & Cart | 카드 결제 · Card Payment |
-|:---:|:---:|:---:|
-| ![](screenshots/02_order_start.png) | ![](screenshots/03_menu_coffee.png) | ![](screenshots/05_card_pay.png) |
+| 시작 화면 · Start | 메뉴 · Menu & Cart | 주문 확인 · Order Review | 카드 결제 · Card Payment |
+|:---:|:---:|:---:|:---:|
+| ![](screenshots/customer-1.png) | ![](screenshots/customer-2.png) | ![](screenshots/customer-3.png) | ![](screenshots/customer-4.png) |
 
 ### 관리자 패널 · Admin Panel
 
-| Login | Menu Management |
-|:---:|:---:|
-| ![](screenshots/06_admin_intro.png) | ![](screenshots/07_admin_coffee.png) |
+| 로그인 · Login | 사용자 정보 · Profile | 메뉴 관리 · Menu List | 메뉴 수정 · Menu Edit |
+|:---:|:---:|:---:|:---:|
+| ![](screenshots/admin-1.png) | ![](screenshots/admin-2.png) | ![](screenshots/admin-3.png) | ![](screenshots/admin-4.png) |
 
 ---
 
