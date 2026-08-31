@@ -9,9 +9,9 @@
 
 ### 고객용 키오스크 · Customer Kiosk
 
-| Landing | Order Start | Menu & Cart | Card Payment |
-|:---:|:---:|:---:|:---:|
-| ![](screenshots/01_landing.png) | ![](screenshots/02_order_start.png) | ![](screenshots/03_menu_coffee.png) | ![](screenshots/05_card_pay.png) |
+| 주문 시작 · Order Start | 메뉴 선택 · Menu & Cart | 카드 결제 · Card Payment |
+|:---:|:---:|:---:|
+| ![](screenshots/02_order_start.png) | ![](screenshots/03_menu_coffee.png) | ![](screenshots/05_card_pay.png) |
 
 ### 관리자 패널 · Admin Panel
 
