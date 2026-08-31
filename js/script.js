@@ -1,3 +1,34 @@
+// Kiosk demo scaling — fits 1080×1920 canvas into any viewport
+(function () {
+  var W = 1080, H = 1920;
+
+  function fit() {
+    var scale = Math.min(window.innerWidth / W, window.innerHeight / H);
+    // Admin pages: scale .wrap/.sub; Kiosk pages: scale body
+    var el = document.querySelector('.wrap') || document.querySelector('.sub') || document.body;
+    var isBody = (el === document.body);
+
+    el.style.transform = 'scale(' + scale + ')';
+    el.style.transformOrigin = 'top center';
+
+    if (isBody) {
+      // html acts as the centering flex container
+      document.documentElement.style.height = (H * scale) + 'px';
+    } else {
+      // Collapse body height so no scrollbar appears
+      document.body.style.height = (H * scale) + 'px';
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fit);
+  } else {
+    fit();
+  }
+  window.addEventListener('resize', fit);
+})();
+
 //html Load script
 window.addEventListener('load', function () {
     var allElements = document.getElementsByTagName('*');

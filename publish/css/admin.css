@@ -1,15 +1,20 @@
 html {
   background-color: #F5F5F5;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
-  background-color: #fff;
+  width: auto;
+  height: auto;
+  margin: 0;
+  background-color: #F5F5F5;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .wrap,
