@@ -1,7 +1,7 @@
 # ☕ Coffee Maker Kiosk
 
 <a href="https://seoldi.github.io/coffee-maker-kiosk/demo.html" target="_blank">👉 주문 화면 데모</a> &nbsp;|&nbsp;
-<a href="https://seoldi.github.io/coffee-maker-kiosk/demo.html?src=admin_intro" target="_blank">⚙️ 관리자 모드 데모</a>
+<a href="https://seoldi.github.io/coffee-maker-kiosk/demo.html?mode=admin" target="_blank">⚙️ 관리자 모드 데모</a>
 
 ---
 

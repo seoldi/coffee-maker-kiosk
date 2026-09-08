@@ -528,6 +528,9 @@
     var curIdx = parseInt(localStorage.getItem('cmkScreen') || '0');
     if (curIdx < 0 || curIdx >= SCREENS.length) curIdx = 0;
 
+    // ?mode=admin URL param → start at admin section
+    if (new URLSearchParams(location.search).get('mode') === 'admin') curIdx = 7;
+
     // Build thumbnails
     SCREENS.forEach(function (s, i) {
       var btn = document.createElement('button');
